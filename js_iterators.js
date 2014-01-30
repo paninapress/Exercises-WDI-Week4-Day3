@@ -42,16 +42,16 @@ var Iterators = (function() {
       //   base = action(arr[i], x);
       // }
       // return base;
-      var i = base;
+    
       Iterators.each(arr, function(x) {
         
         
-        i = action(i, x);
+        base = action(base, x);
 
 
 
       });
-      return i;
+      return base;
       // as a BONUS, implement reduce
       // btw, reduce is an alias for inject :)
       
